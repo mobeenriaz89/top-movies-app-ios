@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Top movies
+//  Top Movies
 //
-//  Created by Mubeen Riaz on 13/06/2023.
+//  Created by Mobeen Riaz on 14/06/2023.
 //
 
 import UIKit
