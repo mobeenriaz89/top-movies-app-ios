@@ -42,6 +42,7 @@ class ViewController: UIViewController {
                 for list in moviesDict {
                     movie.name = list["name"] as? String
                     movie.imageUrl = list["imageUrl"] as? String
+                    movie.desc = list["desc"] as? String
                     self.moviesList.append(movie)
                 }
                 print(self.moviesList)
@@ -67,6 +68,12 @@ extension ViewController: UICollectionViewDataSource,UICollectionViewDelegate{
         let lay = collectionViewLayout as! UICollectionViewFlowLayout
         let widthPerItem = collectionView.frame.width / 2 - lay.minimumInteritemSpacing
         return CGSize(width: widthPerItem - 8, height: 250)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = MovieViewController(nibName: "MovieViewController", bundle: nil)
+        vc.movie = moviesList[indexPath.row]
+        self.present(vc, animated: true)
     }
     
 }
