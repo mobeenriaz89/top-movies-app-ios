@@ -6,6 +6,7 @@ target 'Top Movies' do
   use_frameworks!
 
   # Pods for Top Movies
-pod 'Alamofire'
-
+pod 'Alamofire', '~> 4.9.1'
+pod 'SwiftyJSON', '~> 4.0'
+pod 'SDWebImage', '~> 5.0'
 end
