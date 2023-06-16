@@ -27,13 +27,13 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I1y-Pz-HZh">
-                    <rect key="frame" x="0.0" y="110.33333333333331" width="393" height="524"/>
+                    <rect key="frame" x="0.0" y="110.33333333333331" width="393" height="393"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="I1y-Pz-HZh" secondAttribute="height" multiplier="3:4" id="Hsv-Ou-pzK"/>
+                        <constraint firstAttribute="width" secondItem="I1y-Pz-HZh" secondAttribute="height" multiplier="1:1" id="nJB-Mq-J6U"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL8-yM-qjA">
-                    <rect key="frame" x="20" y="654.33333333333337" width="373" height="24"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL8-yM-qjA" customClass="ResizableLabel" customModule="Top_Movies" customModuleProvider="target">
+                    <rect key="frame" x="20" y="523.33333333333337" width="373" height="24"/>
                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -45,13 +45,13 @@
                 <constraint firstItem="I1y-Pz-HZh" firstAttribute="top" secondItem="2nB-Hm-Nh6" secondAttribute="bottom" id="25n-rW-F2Y"/>
                 <constraint firstItem="cL8-yM-qjA" firstAttribute="top" secondItem="I1y-Pz-HZh" secondAttribute="bottom" constant="20" id="HhY-wf-Z2B"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="I1y-Pz-HZh" secondAttribute="trailing" id="M4Q-yD-jXe"/>
-                <constraint firstItem="I1y-Pz-HZh" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" id="QaW-7B-jOi"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2nB-Hm-Nh6" secondAttribute="trailing" id="Yjt-7q-yW2"/>
                 <constraint firstItem="2nB-Hm-Nh6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aHf-EI-nFj"/>
                 <constraint firstItem="I1y-Pz-HZh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hMf-fN-hA3"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cL8-yM-qjA" secondAttribute="trailing" id="iMU-gK-bXU"/>
                 <constraint firstItem="2nB-Hm-Nh6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="jLE-FU-ka7"/>
                 <constraint firstItem="cL8-yM-qjA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="pIF-L3-R1D"/>
+                <constraint firstItem="I1y-Pz-HZh" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="zMi-yh-YfO"/>
             </constraints>
             <point key="canvasLocation" x="34" y="-11"/>
         </view>
