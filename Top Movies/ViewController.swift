@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         initCollectionView()
         loadMoviesFromApi()
+        print("test branch")
     }
     
     func initCollectionView(){
