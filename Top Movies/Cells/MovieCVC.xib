@@ -20,25 +20,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JiD-YC-TKe">
-                                <rect key="frame" x="0.0" y="0.0" width="200" height="164"/>
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="160"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uL9-lc-RbU">
-                                <rect key="frame" x="0.0" y="190" width="200" height="0.0"/>
-                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="uL9-lc-RbU" customClass="ResizableLabel" customModule="Top_Movies" customModuleProvider="target">
+                                <rect key="frame" x="4" y="160" width="192" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="customMinimumFontSize">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="uL9-lc-RbU" firstAttribute="top" secondItem="JiD-YC-TKe" secondAttribute="bottom" id="37x-P1-cWY"/>
                             <constraint firstAttribute="height" constant="200" id="Enw-RW-aOH"/>
-                            <constraint firstItem="JiD-YC-TKe" firstAttribute="height" secondItem="lrC-bA-M4J" secondAttribute="height" multiplier="0.82" id="Gg4-J8-e9a"/>
                             <constraint firstAttribute="width" constant="200" id="J27-Vt-WSX"/>
-                            <constraint firstAttribute="bottom" secondItem="uL9-lc-RbU" secondAttribute="bottom" constant="10" id="MWM-dQ-o1I"/>
-                            <constraint firstAttribute="trailing" secondItem="uL9-lc-RbU" secondAttribute="trailing" id="Swa-Af-FHA"/>
+                            <constraint firstAttribute="bottom" secondItem="uL9-lc-RbU" secondAttribute="bottom" id="MWM-dQ-o1I"/>
+                            <constraint firstAttribute="trailing" secondItem="uL9-lc-RbU" secondAttribute="trailing" constant="4" id="Swa-Af-FHA"/>
+                            <constraint firstItem="JiD-YC-TKe" firstAttribute="height" secondItem="lrC-bA-M4J" secondAttribute="height" multiplier="0.8" id="aaj-CC-Dli"/>
                             <constraint firstAttribute="trailing" secondItem="JiD-YC-TKe" secondAttribute="trailing" id="cbh-f3-XZO"/>
                             <constraint firstItem="JiD-YC-TKe" firstAttribute="top" secondItem="lrC-bA-M4J" secondAttribute="top" id="dVj-kx-b1l"/>
-                            <constraint firstItem="uL9-lc-RbU" firstAttribute="leading" secondItem="lrC-bA-M4J" secondAttribute="leading" id="qhd-Wl-Vi1"/>
+                            <constraint firstItem="uL9-lc-RbU" firstAttribute="leading" secondItem="lrC-bA-M4J" secondAttribute="leading" constant="4" id="qhd-Wl-Vi1"/>
                             <constraint firstItem="JiD-YC-TKe" firstAttribute="leading" secondItem="lrC-bA-M4J" secondAttribute="leading" id="yDy-fm-RS6"/>
                         </constraints>
                     </view>
@@ -58,4 +65,7 @@
             <point key="canvasLocation" x="56.488549618320612" y="-11.267605633802818"/>
         </collectionViewCell>
     </objects>
+    <designables>
+        <designable name="uL9-lc-RbU"/>
+    </designables>
 </document>

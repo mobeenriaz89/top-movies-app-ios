@@ -21,7 +21,5 @@ struct Movie {
         self.category = json?["name"].string
         self.category = json?["desc"].string
     }
-    init(){
-        
-    }
+    init(){}
 }

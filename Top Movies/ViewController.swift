@@ -36,7 +36,6 @@ class ViewController: UIViewController {
                           method: .get,
                           encoding: JSONEncoding.default).responseJSON { response in
             if response.result.isSuccess {
-                //print(response.value)
                 let moviesDict  = response.value as! [NSDictionary]
                 var movie = Movie()
                 for list in moviesDict {
@@ -45,7 +44,6 @@ class ViewController: UIViewController {
                     movie.desc = list["desc"] as? String
                     self.moviesList.append(movie)
                 }
-                print(self.moviesList)
                 self.moviesCV.reloadData()
             }
         }
@@ -67,7 +65,7 @@ extension ViewController: UICollectionViewDataSource,UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let lay = collectionViewLayout as! UICollectionViewFlowLayout
         let widthPerItem = collectionView.frame.width / 2 - lay.minimumInteritemSpacing
-        return CGSize(width: widthPerItem - 8, height: 250)
+        return CGSize(width: widthPerItem - 8, height: widthPerItem * 1.5)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
