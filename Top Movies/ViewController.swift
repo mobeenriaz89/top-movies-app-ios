@@ -21,8 +21,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         initCollectionView()
         loadMoviesFromApi()
-        let realm = try! Realm()
-        print("Realm is located at:", realm.configuration.fileURL!)
     }
     
     func initCollectionView(){
