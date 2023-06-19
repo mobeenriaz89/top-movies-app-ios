@@ -7,10 +7,13 @@
 
 import UIKit
 import Alamofire
-class ViewController: UIViewController {
+import RealmSwift
 
+class ViewController: UIViewController {
+    
     private let apiUrl = "https://howtodoandroid.com/movielist.json"
     private var moviesList = [Movie]()
+    
     
     @IBOutlet var moviesCV: UICollectionView!
     
@@ -37,17 +40,30 @@ class ViewController: UIViewController {
                           encoding: JSONEncoding.default).responseJSON { response in
             if response.result.isSuccess {
                 let moviesDict  = response.value as! [NSDictionary]
-                var movie = Movie()
-                for list in moviesDict {
-                    movie.name = list["name"] as? String
-                    movie.imageUrl = list["imageUrl"] as? String
-                    movie.desc = list["desc"] as? String
-                    self.moviesList.append(movie)
+                let realm = try! Realm()
+                try! realm.write{
+                    
+                    realm.delete(realm.objects(Movie.self))
+                    
+                    for item in moviesDict {
+                        let movie = Movie(value: item)
+                        realm.add(movie)
+                    }
                 }
-                self.moviesCV.reloadData()
+                
+                self.loadMoviesFromDB()
             }
         }
+        
     }
+    
+    func loadMoviesFromDB(){
+        let realm = try! Realm()
+        let realmMovies = realm.objects(Movie.self)
+        moviesList = Array(realmMovies)
+        self.moviesCV.reloadData()
+    }
+    
 }
 
 extension ViewController: UICollectionViewDataSource,UICollectionViewDelegate{
