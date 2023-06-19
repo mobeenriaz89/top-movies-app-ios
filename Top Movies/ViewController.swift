@@ -45,12 +45,8 @@ class ViewController: UIViewController {
                     
                     realm.delete(realm.objects(Movie.self))
                     
-                    for list in moviesDict {
-                        let movie = Movie()
-                        movie.name = list["name"] as? String
-                        movie.imageUrl = list["imageUrl"] as? String
-                        movie.desc = list["desc"] as? String
-                        
+                    for item in moviesDict {
+                        let movie = Movie(value: item)
                         realm.add(movie)
                     }
                 }
