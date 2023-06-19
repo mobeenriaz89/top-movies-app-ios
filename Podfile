@@ -9,4 +9,5 @@ target 'Top Movies' do
 pod 'Alamofire', '~> 4.9.1'
 pod 'SwiftyJSON', '~> 4.0'
 pod 'SDWebImage', '~> 5.0'
+pod 'RealmSwift', '~>10'
 end
