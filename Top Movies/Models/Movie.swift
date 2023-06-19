@@ -8,18 +8,20 @@
 import Foundation
 import SwiftyJSON
 import Alamofire
+import RealmSwift
 
-struct Movie {
-    var category: String? = ""
-    var imageUrl: String? = ""
-    var name: String? = ""
-    var desc: String? = ""
+
+class Movie: Object {
+    @Persisted var category: String? = ""
+    @Persisted var imageUrl: String? = ""
+    @Persisted var name: String? = ""
+    @Persisted var desc: String? = ""
     
-    init(json: JSON?) {
-        self.category = json?["category"].string
-        self.category = json?["imageUrl"].string
-        self.category = json?["name"].string
-        self.category = json?["desc"].string
-    }
-    init(){}
+    convenience init(category: String, imageUrl: String, name: String, desc: String) {
+           self.init()
+           self.category = category
+           self.imageUrl = imageUrl
+           self.name = name
+           self.desc = desc
+       }
 }
