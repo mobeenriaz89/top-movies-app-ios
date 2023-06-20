@@ -8,6 +8,7 @@ What's done so far:
 
 - Integrated Alamofire for making HTTP requests.
 - Implemented a public api that return's a list of movies.
-- Implemented UICollectionView and populated it with the list of movies.
+- Integrated Realm for data persistence and stored the Movie's list in Realm.
+- Implemented UICollectionView and populated it with the list of movies stored in Realm.
 - Created a controller with movie details i.e Title, Thumb and description.
 - On didTap, opened the movie detail controller and populated the data of that specific item tapped.
