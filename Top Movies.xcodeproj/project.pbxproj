@@ -17,6 +17,7 @@
 		B6AFB92D2A3B88B400E3E286 /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AFB92B2A3B88B400E3E286 /* MovieViewController.xib */; };
 		BCD41F49D1B944D844B3B72E /* Pods_Top_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942E34FB3C635A4DA1D9816F /* Pods_Top_Movies.framework */; };
 		F50869CF2A3C3805005FBB0F /* ResizableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50869CE2A3C3805005FBB0F /* ResizableLabel.swift */; };
+		F5313CEB2A41881600F7DE68 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5313CEA2A41881600F7DE68 /* AppConstants.swift */; };
 		F534952D2A3B15DC001DE9F7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F534952C2A3B15DC001DE9F7 /* Movie.swift */; };
 		F53495312A3B27F3001DE9F7 /* MovieCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F534952F2A3B27F3001DE9F7 /* MovieCVC.swift */; };
 		F53495322A3B27F3001DE9F7 /* MovieCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53495302A3B27F3001DE9F7 /* MovieCVC.xib */; };
@@ -37,6 +38,7 @@
 		B6AFB92A2A3B88B400E3E286 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		B6AFB92B2A3B88B400E3E286 /* MovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieViewController.xib; sourceTree = "<group>"; };
 		F50869CE2A3C3805005FBB0F /* ResizableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableLabel.swift; sourceTree = "<group>"; };
+		F5313CEA2A41881600F7DE68 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		F534952C2A3B15DC001DE9F7 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		F534952F2A3B27F3001DE9F7 /* MovieCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCVC.swift; sourceTree = "<group>"; };
 		F53495302A3B27F3001DE9F7 /* MovieCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCVC.xib; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		B69048362A398AE8007CAA6F /* Top Movies */ = {
 			isa = PBXGroup;
 			children = (
+				F5313CE92A4187EE00F7DE68 /* Constants */,
 				F50869CA2A3C37A7005FBB0F /* Utils */,
 				B6AFB9292A3B886000E3E286 /* Controllers */,
 				F534952E2A3B27AA001DE9F7 /* Cells */,
@@ -130,6 +133,14 @@
 				F50869CE2A3C3805005FBB0F /* ResizableLabel.swift */,
 			);
 			path = UIUtils;
+			sourceTree = "<group>";
+		};
+		F5313CE92A4187EE00F7DE68 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F5313CEA2A41881600F7DE68 /* AppConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		F534952B2A3B0970001DE9F7 /* Models */ = {
@@ -269,6 +280,7 @@
 				F53495312A3B27F3001DE9F7 /* MovieCVC.swift in Sources */,
 				B690483C2A398AE8007CAA6F /* ViewController.swift in Sources */,
 				B69048382A398AE8007CAA6F /* AppDelegate.swift in Sources */,
+				F5313CEB2A41881600F7DE68 /* AppConstants.swift in Sources */,
 				F534952D2A3B15DC001DE9F7 /* Movie.swift in Sources */,
 				B690483A2A398AE8007CAA6F /* SceneDelegate.swift in Sources */,
 				B6AFB92C2A3B88B400E3E286 /* MovieViewController.swift in Sources */,

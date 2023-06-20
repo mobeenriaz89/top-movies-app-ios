@@ -11,9 +11,7 @@ import RealmSwift
 
 class ViewController: UIViewController {
     
-    private let apiUrl = "https://howtodoandroid.com/movielist.json"
     private var moviesList = [Movie]()
-    
     
     @IBOutlet var moviesCV: UICollectionView!
     
@@ -35,7 +33,7 @@ class ViewController: UIViewController {
     }
     
     func loadMoviesFromApi(){
-        Alamofire.request(apiUrl,
+        Alamofire.request(AppConstants.apiUrl,
                           method: .get,
                           encoding: JSONEncoding.default).responseJSON { response in
             if response.result.isSuccess {
